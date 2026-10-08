@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yomi Labs</title>
+<meta name="description" content="Yomi Labs builds AI agents that research, forecast and verify equity markets.">
+<style>
+  :root {
+    --bg: #fbfaf7; --fg: #1b1b1a; --muted: #5f5e5a; --line: #e4e2dc;
+    --accent: #b5452b; --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141413; --fg: #ecebe6; --muted: #a3a29c; --line: #2c2b29; --accent: #e07a5f; --card: #1c1c1a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 28px 0; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-weight: 700; letter-spacing: .02em; }
+  .logo span { color: var(--accent); }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; }
+  .hero { padding: 64px 0 40px; }
+  h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.15; margin: 0 0 18px; letter-spacing: -.01em; }
+  .lead { color: var(--muted); font-size: 19px; margin: 0; }
+  h2 { font-size: 22px; margin: 56px 0 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px; }
+  .card b { display: block; margin-bottom: 6px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .note { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; color: var(--muted); }
+  footer { margin: 72px 0 40px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Yomi<span>.</span>Labs</div>
+    <nav><a href="#product">Product</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <section class="hero">
+    <h1>AI agents that read the market.</h1>
+    <p class="lead">Yomi (読み) means "reading ahead," as a shogi player reads the moves to come. We build an autonomous research pipeline that turns market data into forecasts, checks every forecast against reality, and keeps a human in charge of every trade.</p>
+  </section>
+
+  <section id="product">
+    <h2>What we're building</h2>
+    <div class="grid">
+      <div class="card"><b>Research</b><p>Claude-powered agents collect and summarize market data, filings and news every trading day.</p></div>
+      <div class="card"><b>Forecast</b><p>Daily price forecasts for Japanese and US equities, generated before the market opens.</p></div>
+      <div class="card"><b>Verify</b><p>Every forecast is scored against the actual close. Accuracy is tracked over time, not assumed.</p></div>
+      <div class="card"><b>Strategy</b><p>Backtested strategies built from verified signals, with broker API integration next.</p></div>
+    </div>
+
+    <h2>How we work</h2>
+    <p class="note">Automation does the research. People make the decisions. No order is ever placed without explicit human approval.</p>
+    <p>Our stack is built on the Claude API and Claude Code: multi-agent workflows, scheduled cloud routines, and a long-term knowledge base that the agents maintain themselves.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Founder: Sotaro<br>
+    <a href="mailto:hello@yomilabs.dev">hello@yomilabs.dev</a></p>
+  </section>
+
+  <footer>© 2026 Yomi Labs · Tokyo, Japan</footer>
+</div>
+</body>
+</html>
